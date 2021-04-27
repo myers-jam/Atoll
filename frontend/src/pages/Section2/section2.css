@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Raleway:wght@300&display=swap');
+
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    width: 100%;
+    background-color: #1d1d1d;
+}
+
+.section-2-title {
+    margin: auto;
+    max-width: 60rem;
+    height: 20rem;
+    display: flex;
+    
+}
+
+.title-text {
+    padding-top: 10rem;
+    /* margin: 0 auto 0; */
+    /* max-width: 60rem; */
+    margin: 0 auto;
+    font-size: 9rem;
+    font-family: 'Black Han Sans', sans-serif;
+    /* height: 20rem; */
+    /* display: flex; */
+    /* background-color: orange; */
+}
+
+
+
+#section-2-title {
+    color: rgb(255, 255, 255);
+}
+
+.custom-heading-module {
+    color: rgb(39, 153, 219);
+    font-family: 'Cairo', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+    align-items: center;
+    padding-left: 35rem;
+    font-size: 2rem;
+}

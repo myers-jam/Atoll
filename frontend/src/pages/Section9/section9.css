@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:300,400,700');
+
+
+.section-9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 6rem;
+    background-color: #1f1f1f;
+}
+
+.section-9-content {
+    margin: auto;
+}
+
+.center-btn {
+    display: flex;
+    justify-content: center;
+}
+
+#download-title {
+    font-family:  'Black Han Sans', sans-serif;
+    font-size: 4rem;
+    color: #f39f3e;
+}
+
+#btn-color {
+    font-size: 2rem;
+}
+
+.download-btn,
+.btn-2 {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer a,
+.download-btn a
+ {
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  padding: 15px;
+  color: #ffffff;
+  font-family: 'Black Han Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+span {
+  position: relative;
+  z-index: 3;
+}
+
+/* Button style */
+
+.download-btn a::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  width: calc(100% + 6px);
+  /*100% plus double the times left values*/
+  height: calc(100% - 10px);
+  background-color: #1f1f1f;
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+
+.download-btn a:hover::before {
+  transform: scaleY(0);
+}
+
+.download-btn a::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+  background-color: #1f1f1f;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+
+.download-btn :hover {
+    text-decoration: none;
+    color: #f39f3e;
+    transition: .25s;
+}
+.download-btn a:hover::after
+{
+  transform: scaleX(0);
+}
+
+footer{
+    text-align: center;
+  font-size: 10px;
+}

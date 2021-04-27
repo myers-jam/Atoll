@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:300,400,700');
+.section-4 {
+    position: relative;
+    width: 100%;
+    height: 20rem;
+}
+
+.rectangle {
+    /* Absolute position */
+    left: 0px;
+    position: absolute;
+    top: 2rem;
+
+    /* Take full size */
+    height: 80%;
+    width: 100%;
+
+    /* Create diagonal sides */
+    transform: skewY(3deg);
+    
+    
+
+    /* Background color */
+    background-color: rgb(54, 54, 54);
+
+    /* Displayed under the main content */
+    z-index: -1;
+}
+
+.slant_text {
+    text-align: center;
+    padding-top: 6rem;
+    transform: skewY(-3deg);
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}

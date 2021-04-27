@@ -1,0 +1,106 @@
+ @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:300,400,700');
+
+.section-8 {
+    display: flex;
+    width: 100%;
+    height: 145rem;
+    background-color: #1f1f1f;
+}
+
+
+
+.section-8-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 8rem auto;
+    height: fit-content;
+    background-color: #1f1f1f;
+}
+
+
+.circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin: auto;
+    font-family: 'Black Han Sans', sans-serif;
+    background-color: #ee792a;
+    line-height: 350px;
+    text-align: center;
+    font-size: 3.5rem;
+    color: rgb(255, 255, 255);
+}
+
+#gallery-title {
+    color: #1f1f1f;
+}
+.box {
+    width: 500px;
+    height: 375px;
+    background-size: cover;
+    margin:  2rem;
+    justify-content: center;
+}
+
+.circle-container {
+    display: flex;
+
+}
+
+#game1 {
+    background-image:url('../../image/SC4.PNG');
+}
+
+#game2 {
+    background-image:url('../../image/SC5.PNG');
+}
+
+#game3 {
+    background-image:url('../../image/SC6.PNG');
+}
+
+#game4 {
+    background-image:url('../../image/SC7.PNG');
+}
+
+#game5 {
+    background-image:url('../../image/SC8.PNG');
+}
+
+#game6 {
+    background-image:url('../../image/SC9.PNG');
+}
+
+#game7 {
+    background-image:url('../../image/SC10.PNG');
+}
+
+#game8 {
+    background-image:url('../../image/SC11.PNG');
+}
+
+#game9 {
+    background-image:url('../../image/SC12.PNG');
+}
+
+#game10 {
+    background-image:url('../../image/SC13.png');
+}
+
+#game11 {
+    background-image:url('../../image/SC14.PNG');
+}
+
+#game12 {
+    background-image:url('../../image/SC15.PNG');
+}
+
+#game13 {
+    background-image:url('../../image/SC16.PNG');
+}
+
+#game14 {
+    background-image:url('../../image/SC17.PNG');
+}

@@ -1,0 +1,46 @@
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 6rem;
+    background: linear-gradient(45deg,rgb(6, 155, 255), rgb(0, 75, 126));
+    /* justify-content: center; */
+}
+
+.navbar-content {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+
+.navbar-logo {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 3rem;               /* CLOCKWISE  TOP, RIGHT, BOTTOM, LEFT*/
+
+}
+
+.navbar-element {
+    margin-right: 5rem;
+}
+
+.about_link {
+    margin-top: auto;
+    margin-bottom: auto;
+    color: rgb(253, 253, 253);
+    text-decoration-line: underline;
+    text-underline-offset: .8rem;
+    text-decoration-thickness: 3px;
+}
+
+.navbar-container {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: linear-gradient(45deg,rgb(6, 155, 255), rgb(0, 75, 126));;
+}

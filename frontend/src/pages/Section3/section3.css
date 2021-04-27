@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:300,400,700');
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 65rem;
+    background-color: #1d1d1d;
+}
+
+.pictures {
+    margin: auto;
+    box-shadow: 2rem;
+    
+}
+
+#middle-img {
+    padding: 0 4rem;
+}
+
+.zoom1 {
+    transition: transform .2s;
+}
+.zoom1:hover {
+    transform: scale(1.25);
+}
+
+.gallery_button_text {
+    margin: 1rem auto;
+    color: aliceblue;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 1.5rem;   
+}
+
+.gallery_button {
+    display:inline-block;
+    padding: 0.7em 1.4em;
+    margin: 4rem auto;
+    border-radius:0.15em;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:400;
+    font-family: 'Black Han Sans', sans-serif;
+    color:#000000;
+    background-color:#ffa733;
+    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+    text-align:center;
+    position:relative;
+}
+.gallery_button:hover {
+    text-decoration: none;
+    color:#000000
+}
+
+.gallery_button:active{
+    text-decoration: none;
+    top: .1rem;
+}
