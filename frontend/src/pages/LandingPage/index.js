@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import api from '../../apiService/api';
-import { Table } from 'react-bootstrap';
+import { Button, Table } from 'react-bootstrap';
 import './landing.css';
 import '../Navbar/navbar.css';
 import { withRouter } from 'react-router-dom';
@@ -15,17 +15,24 @@ import Section7 from '../Section7';
 import Section8 from '../Section8';
 import Section9 from '../Section9';
 
-
 function Landingpage() {
   const [tableData, setTableData] = useState([]);
+  useEffect(() => {
+    (async () => { 
+      try {
+        let log = 0;
+        const interval = setInterval(async () => {
+          log += 1;
+          console.log('refreshing data', log);
+          await getChangelogs();
+      }, 10000 );
   
-  useEffect(async () => {
-    try {
-      await getChangelogs();
+      return () => clearInterval(interval);
 
     } catch (error) {
       console.log(error);
     }
+  })();
   }, []);
 
 
@@ -34,7 +41,6 @@ function Landingpage() {
 
       const logs = await api.get('/getChangelogs');
       let logList = logs.data;
-      console.log(logList);
       let id = 0;
       const logTable = logList.map(changelog => {
         const author = changelog.author;
