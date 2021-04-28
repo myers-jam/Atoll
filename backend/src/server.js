@@ -37,5 +37,5 @@ try {
 
 // Listen for whatever PORT is set
 app.listen(port, () => {
-  console.log(`Listening on ${PORT}`);
+  console.log(`Listening on ${port}`);
 });

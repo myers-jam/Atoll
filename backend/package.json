@@ -1,9 +1,6 @@
 {
   "name": "Atoll",
   "version": "1.0.0",
-  "engine": {
-    "node": "14.x"
-  },
   "description": "",
   "main": "src/server.js",
   "dependencies": {
@@ -16,11 +13,8 @@
   },
   "scripts": {
     "start": "node src/server.js",
-    "dev": "nodemon src/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "npm run install-client && npm run build-client",
-    "install-client": "cd frontend && yarn",
-    "build-client": "cd frontend && npm run build"
+    "dev": "nodemon src/server.js"
+    
   },
   "keywords": [],
   "author": "",
