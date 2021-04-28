@@ -1,6 +1,9 @@
 {
   "name": "Atoll",
   "version": "1.0.0",
+  "engine": {
+    "node": "14.x"
+  },
   "description": "",
   "main": "src/server.js",
   "dependencies": {

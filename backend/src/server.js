@@ -12,7 +12,7 @@ const port = process.env.PORT || 5000;
 
 
 
-// If we are NOT starting our server as a development environment, then import our .env 
+// Production - point to React app
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'))
 }
