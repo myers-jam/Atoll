@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import api from '../../apiService/api';
-import { Button, Table } from 'react-bootstrap';
+import { Table } from 'react-bootstrap';
 import './landing.css';
 import '../Navbar/navbar.css';
 import { withRouter } from 'react-router-dom';
-import Nav_bar from '../Navbar';
+import NavigationBar from '../Navbar';
 import Section1 from '../Section1';
 import Section2 from '../Section2';
 import Section3 from '../Section3';
@@ -16,11 +15,15 @@ import Section8 from '../Section8';
 import Section9 from '../Section9';
 
 function Landingpage() {
+  const axios = require('axios').default;
   const [tableData, setTableData] = useState([]);
+
+  
   useEffect(() => {
     (async () => { 
+      await getChangelogs();
       try {
-        let log = 0;
+        var log = 0;
         const interval = setInterval(async () => {
           log += 1;
           console.log('refreshing data', log);
@@ -38,10 +41,9 @@ function Landingpage() {
 
   async function getChangelogs() {
     try {
-
-      const logs = await api.get('/getChangelogs');
-      let logList = logs.data;
-      let id = 0;
+      const logs = await axios.get('/getChangelogs');
+      var logList = logs.data;
+      var id = 0;
       const logTable = logList.map(changelog => {
         const author = changelog.author;
         const date = changelog.date.substring(0,10);
@@ -72,12 +74,8 @@ function Landingpage() {
 
   // everything inside the return is JSX (JavaScript XML) and is what gets rendered to screen
   return (
-
-
-
-    // <Container>
     <div>
-      <Nav_bar  />
+      <NavigationBar />
       <Section1 />
       <Section2 />
       <Section3 />
@@ -113,7 +111,6 @@ function Landingpage() {
         </div>
       </div>
     </div>
-    // </Container>
   );
 }
 

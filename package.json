@@ -1,14 +1,26 @@
 {
+  "name": "Atoll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "dependencies": {
-    "heroku": "^7.52.0"
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "heroku": "^7.52.0",
+    "mongoose": "^5.12.3",
+    "nodemon": "^2.0.7"
   },
   "engines": {
-    "node": "14.16.1"
+    "node": "15.4.0"
   },
   "scripts": {
-    "start": "node backend/src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "npm run install-client && npm run build-client",
-    "install-client": "cd frontend && yarn",
-    "build-client": "cd frontend && npm run build"
-}}
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
