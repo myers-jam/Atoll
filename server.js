@@ -1,3 +1,4 @@
+require('dotenv').config();
 // Import express and mongoose
 const express = require('express');
 const mongoose = require('mongoose');
@@ -9,13 +10,6 @@ const app = express();
 
 // This line is needed for later deployment
 const port = process.env.PORT || 5000;
-
-
-
-// Production - point to React app
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'))
-}
 
 // Telling the app to use cors, express.json, and routes
 //cors = Cross-Origin Resource Sharing - allow or restrict requested resources on a web server
@@ -33,6 +27,22 @@ try {
   console.log('MongoDB connected sucessfully!');
 } catch (error) {
   console.log(error);
+}
+
+
+// if in production - point to React app
+if (process.env.NODE_ENV === 'production') {
+  const path = require('path');
+  app.use(express.static('client/build'));
+
+  // Right before your app.listen(), add this:
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+  });
+} else {
+  app.get("/", (req, res) => {
+    res.send("API Running");
+  });
 }
 
 // Listen for whatever PORT is set
