@@ -29,47 +29,47 @@ function Section5() {
 
     return (
         <div className='section-5' id='about-tag'>
-            <div className='section-5-title'>
-                <p>A</p>
-                <p id='student'> STUDENT</p>
-                <p id='bar'>PROJECT</p>
+            <div className='title-content-container'>
+                <div className='section-5-title'>
+                    <p>A</p>
+                    <p id='student'> STUDENT</p>
+                    <p id='bar'>PROJECT</p>
+                </div>
+                <div className='section-5-content'>
+                    <p>We are a group of four students from WTAMU who were inspired to create a game, using custom assets modeled by each team member.</p>
+                </div>
             </div>
-            <div className='section-5-content'>
-                <p>We are a group of four students from WTAMU<br></br>who were inspired to create a game, using<br></br>custom assets modeled by each team member.</p>
-            </div>
-            <div className='slider'>
-                
-                <Swiper 
-                    spaceBetween={25}
-                    pagination={{clickable: true}}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    slidesPerView= {3}
-                    loop= {true}
-                    autoplay= {{
-                        delay: 2500,
-                        disableOnInteraction: false
-                    }
-                    }
-                    
-                    
-                >
-                    <SwiperSlide><img id='pic' src={chest}></img></SwiperSlide> 
-                    <SwiperSlide><img id='pic' src={landscape}></img></SwiperSlide>
-                    <SwiperSlide><img id='pic' src={palm_tree}></img></SwiperSlide>
-                    <SwiperSlide><img id='pic' src={flower}></img></SwiperSlide>
-                    <SwiperSlide><img id='pic' src={grass}></img></SwiperSlide>  
-                    <SwiperSlide><img id='pic' src={key}></img></SwiperSlide>
-                    <SwiperSlide><img id='pic' src={plant}></img></SwiperSlide>
-                    <SwiperSlide><img id='pic' src={rock}></img></SwiperSlide>
-                    <SwiperSlide><img id='pic' src={anemone}></img></SwiperSlide>
-                    <SwiperSlide><img id='pic' src={bird}></img></SwiperSlide>
-                    <SwiperSlide><img id='pic' src={clam}></img></SwiperSlide>
-                    <SwiperSlide><img id='pic' src={crystal}></img></SwiperSlide>
-                    <SwiperSlide><img id='pic' src={starfish}></img></SwiperSlide>
-                    <SwiperSlide><img id='pic' src={barrel}></img></SwiperSlide>
-                    <SwiperSlide><img id='pic' src={plank}></img></SwiperSlide>
-                </Swiper> 
+            <div className='slider-container'>
+                <div className='slider'>   
+                    <Swiper
+                        className='swiper-class' 
+                        spaceBetween={0}
+                        pagination={{clickable: true}}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={(swiper) => console.log(swiper)}
+                        slidesPerView= {1}
+                        loop= {true}
+                        autoplay= {{
+                            delay: 2500,
+                            disableOnInteraction: false
+                    }}>
+                        <SwiperSlide><img id='pic' src={chest}></img></SwiperSlide> 
+                        <SwiperSlide><img id='pic' src={landscape}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={palm_tree}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={flower}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={grass}></img></SwiperSlide>  
+                        <SwiperSlide><img id='pic' src={key}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={plant}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={rock}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={anemone}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={bird}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={clam}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={crystal}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={starfish}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={barrel}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={plank}></img></SwiperSlide>
+                    </Swiper> 
+                </div>
             </div>
         </div>
     )

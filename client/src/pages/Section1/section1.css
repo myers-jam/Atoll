@@ -1,5 +1,5 @@
 .section-1 {
-    height: 100vh;
+    height: max-content;
     width: 100%;
     /* background-image: url('../../image/Main_screen.png');
     background-repeat: no-repeat;

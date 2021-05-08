@@ -13,9 +13,9 @@ function section3() {
     return (
         <div className='section-3'>
             <div className='pictures'>
-                <img className ='zoom1'src = {SC1}></img>
-                <img className ='zoom1'src = {SC2} id='middle-img'></img>
-                <img className ='zoom1'src = {SC3}></img>
+                <img className ='zoom1' src = {SC1}></img>
+                <img className ='zoom1' src = {SC2} id='middle-img'></img>
+                <img className ='zoom1' src = {SC3}></img>
             </div>
             <p className ='gallery_button_text'>VIEW THE FULL GALLERY</p>
             <a className ='gallery_button'type='button' href='#gallery-tag'>HERE</a>

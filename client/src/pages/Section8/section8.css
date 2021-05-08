@@ -3,7 +3,8 @@
 .section-8 {
     display: flex;
     width: 100%;
-    height: 145rem;
+    height: max-content;
+    padding-bottom: 5rem;
     background-color: #1f1f1f;
 }
 
