@@ -24,7 +24,9 @@ html {
     scroll-behavior: smooth;
 }
 
-html, body, #root {
+html,
+body,
+#root {
     min-width: 100%;
     max-width: 100%;
     overflow-x: hidden;
@@ -33,11 +35,13 @@ html, body, #root {
 
 body {
     background-color: #a7a7a7 !important;
-    color:rgb(12, 12, 12);
+    color: rgb(12, 12, 12);
 }
 
 
-body, input, button {
+body,
+input,
+button {
     font-family: "Quicksand", Arial, Helvetica, sans-serif;
 }
 
@@ -61,7 +65,12 @@ body, input, button {
 }
 
 
-.h1, h2, h3, h4, h5, h6 {
+.h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     /* These are technically the same, but use both */
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -77,13 +86,13 @@ body, input, button {
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
-    
+
     white-space: initial;
     color: rgb(39, 39, 39);
 }
 
 
-.content > p {
+.content>p {
     /* These are technically the same, but use both */
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -117,17 +126,15 @@ body, input, button {
     border-radius: 10px;
     padding: 3em;
     text-align: left;
+    width: 100vh;
 }
 
 .space {
     padding: 3rem;
     width: 6rem;
-    
+
 }
 
 .auth {
     width: 9rem;
 }
-
-
-
