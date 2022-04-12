@@ -11,7 +11,7 @@ function Section9() {
                 <h1 id='download-title'>PLAY ATOLL</h1>
                 <div className='center-btn'>
                     <div className='download-btn'>
-                        <a href='https://docs.google.com/uc?export=download&id=199KTxXb2iar8bxggEPkiwzZaGhdu9uji' target="_blank" rel='noreferrer'><span id='btn-color'>DOWNLOAD</span></a>
+                        <a href='https://kysokyso.itch.io/atoll/download/WEdIrYAfUYAD3A6cC5bvIv_bUzC6T5PhH2gtF_6f' target="_blank" rel='noreferrer'><span id='btn-color'>DOWNLOAD</span></a>
                     </div>
                 </div>
 

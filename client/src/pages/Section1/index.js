@@ -5,15 +5,23 @@ import atollVideo from '../../image/atollpreview.mp4';
 
 function Section1() {
 
-    
 
-    return (
-        <div className='section-1'>
-          <video autoPlay muted loop src={atollVideo} type='video/mp4' id='fullscreen-video' />
-        </div>
-      
 
-    )
+  return (
+    <div className='section-1'>
+      <video
+        autoPlay={true}
+        muted
+        loop={true}
+        controls={false}
+        playsInline
+        src={atollVideo}
+        type='video/mp4'
+        id='fullscreen-video' />
+    </div>
+
+
+  )
 }
 
 
