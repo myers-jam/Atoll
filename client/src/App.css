@@ -129,6 +129,18 @@ h6 {
     width: 100vh;
 }
 
+@media screen and (max-width:950px) {
+    .content {
+        width: 75vh;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .content {
+        width: 50vh;
+    }
+}
+
 .space {
     padding: 3rem;
     width: 6rem;
