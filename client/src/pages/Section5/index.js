@@ -43,6 +43,34 @@ function Section5() {
                 <div className='slider'>
                     <Swiper
                         className='swiper-class'
+                        spaceBetween={1}
+                        pagination={{ clickable: true }}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={(swiper) => console.log(swiper)}
+                        slidesPerView={3}
+                        loop={true}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false
+                        }}>
+                        <SwiperSlide><img id='pic' src={chest}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={landscape}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={palm_tree}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={flower}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={grass}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={key}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={plant}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={rock}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={anemone}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={bird}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={clam}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={crystal}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={starfish}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={barrel}></img></SwiperSlide>
+                        <SwiperSlide><img id='pic' src={plank}></img></SwiperSlide>
+                    </Swiper>
+                    <Swiper
+                        className='swiper-class-one'
                         spaceBetween={0}
                         pagination={{ clickable: true }}
                         onSlideChange={() => console.log('slide change')}
