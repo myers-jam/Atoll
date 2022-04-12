@@ -9,7 +9,7 @@
     height: max-content;
     padding-bottom: 5rem;
     background-color: #1f1f1f;
-    
+
 }
 
 
@@ -68,7 +68,7 @@
     justify-content: center; */
     margin: auto;
     padding: 5rem 0;
-    
+
 }
 
 #bar {
@@ -100,6 +100,7 @@
     display: flex;
     /* flex-direction: row; */
     max-width: 31rem;
+    /* max-width: 50rem; */
     max-height: 28rem;
     /* margin-top: 30rem; */
     /* margin: 30rem auto 0; */
@@ -113,11 +114,3 @@
     width: 533px;
 
 }
-
-/* .swiper-pagination {
-    position: absolute;
-    height: 5rem;
-    padding-top: 4.5rem;
-    margin-right: auto;
-    margin-left: -1.5rem;  
-} */

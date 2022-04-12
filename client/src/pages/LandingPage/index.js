@@ -18,9 +18,9 @@ function Landingpage() {
   const axios = require('axios').default;
   const [tableData, setTableData] = useState([]);
 
-  
+
   useEffect(() => {
-    (async () => { 
+    (async () => {
       await getChangelogs();
       try {
         var log = 0;
@@ -28,14 +28,14 @@ function Landingpage() {
           log += 1;
           console.log('refreshing data', log);
           await getChangelogs();
-      }, 10000 );
-  
-      return () => clearInterval(interval);
+        }, 10000);
 
-    } catch (error) {
-      console.log(error);
-    }
-  })();
+        return () => clearInterval(interval);
+
+      } catch (error) {
+        console.log(error);
+      }
+    })();
   }, []);
 
 
@@ -46,10 +46,10 @@ function Landingpage() {
       var id = 0;
       const logTable = logList.map(changelog => {
         const author = changelog.author;
-        const date = changelog.date.substring(0,10);
+        const date = changelog.date.substring(0, 10);
         const description = changelog.description;
         id += 1;
-        return ({id, date, author, description});
+        return ({ id, date, author, description });
       });
 
       setTableData(logTable);
@@ -69,7 +69,7 @@ function Landingpage() {
         <td>{changelog.description}</td>
       </tr>
     );
-  }; 
+  };
 
 
   // everything inside the return is JSX (JavaScript XML) and is what gets rendered to screen
@@ -88,24 +88,24 @@ function Landingpage() {
 
       <div className='container'>
         <div className='content'>
-      
-          <h4 className='changelogs-h4'>Changelogs</h4>
+
+          <h4 className='changelogs-h4'>Dev-logs</h4>
 
           <Table className='changelogsTable' hover size="sm">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Date</th>
-              <th>Author</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            {tableData ? tableData.map(renderChangelogs) 
-              :
-              ''}
-          </tbody>
-        </Table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Date</th>
+                <th>Author</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              {tableData ? tableData.map(renderChangelogs)
+                :
+                ''}
+            </tbody>
+          </Table>
 
 
         </div>

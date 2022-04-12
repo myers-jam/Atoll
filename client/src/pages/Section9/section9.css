@@ -2,32 +2,33 @@
 
 
 .section-9 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    padding-bottom: 6rem;
-    background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 6rem;
+  background-color: #1f1f1f;
 }
 
 .section-9-content {
-    margin: auto;
+  margin: auto;
 }
 
 .center-btn {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #download-title {
-    font-family:  'Black Han Sans', sans-serif;
-    font-size: 4rem;
-    color: #f39f3e;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 4rem;
+  color: #f39f3e;
+  text-align: center;
 }
 
 #btn-color {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .download-btn,
@@ -41,8 +42,7 @@
 }
 
 footer a,
-.download-btn a
- {
+.download-btn a {
   text-decoration: none;
   border: 2px solid #ffffff;
   padding: 15px;
@@ -91,16 +91,16 @@ span {
 }
 
 .download-btn :hover {
-    text-decoration: none;
-    color: #f39f3e;
-    transition: .25s;
+  text-decoration: none;
+  color: #f39f3e;
+  transition: .25s;
 }
-.download-btn a:hover::after
-{
+
+.download-btn a:hover::after {
   transform: scaleX(0);
 }
 
-footer{
-    text-align: center;
+footer {
+  text-align: center;
   font-size: 10px;
 }

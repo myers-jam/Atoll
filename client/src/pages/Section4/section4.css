@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:300,400,700');
+
 .section-4 {
     position: relative;
     width: 100%;
     height: 20rem;
+    /* vertical-align: middle; */
 }
 
 .rectangle {
@@ -17,8 +19,8 @@
 
     /* Create diagonal sides */
     transform: skewY(3deg);
-    
-    
+
+
 
     /* Background color */
     background-color: rgb(54, 54, 54);
@@ -28,10 +30,21 @@
 }
 
 .slant_text {
+    margin: auto;
+    /* display: flex; */
     text-align: center;
+    /* justify-items: center; */
+    /* padding-top: 2rem; */
     padding-top: 6rem;
+    /* vertical-align: middle !important; */
     transform: skewY(-3deg);
     font-family: 'Black Han Sans', sans-serif;
     font-size: 3rem;
     color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 700px) {
+    .slant_text {
+        padding-top: 2rem !important;
+    }
 }

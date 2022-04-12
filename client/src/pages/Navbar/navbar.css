@@ -1,11 +1,32 @@
-
 .navbar-container {
     display: flex;
     flex-direction: row;
     width: 100vw;
     height: 6rem;
-    background: linear-gradient(45deg,rgb(6, 155, 255), rgb(0, 75, 126));
+    background: linear-gradient(45deg, rgb(6, 155, 255), rgb(0, 75, 126));
     /* justify-content: center; */
+}
+
+@media screen and (max-width:700px) {
+    .navbar-container {
+        height: 3rem !important;
+    }
+
+    .navbar-logo {
+        display: none;
+    }
+
+    .about_link {
+        text-decoration-line: underline !important;
+        text-underline-offset: .2rem !important;
+        text-decoration-thickness: 1px !important;
+    }
+
+    .navbar-element {
+        margin-right: 1rem !important;
+    }
+
+
 }
 
 .navbar-content {
@@ -20,7 +41,8 @@
 .navbar-logo {
     margin-top: auto;
     margin-bottom: auto;
-    width: 3rem;               /* CLOCKWISE  TOP, RIGHT, BOTTOM, LEFT*/
+    width: 3rem;
+    /* CLOCKWISE  TOP, RIGHT, BOTTOM, LEFT*/
 
 }
 
@@ -42,5 +64,6 @@
     z-index: 999;
     top: 0;
     left: 0;
-    background-color: linear-gradient(45deg,rgb(6, 155, 255), rgb(0, 75, 126));;
+    background-color: linear-gradient(45deg, rgb(6, 155, 255), rgb(0, 75, 126));
+    ;
 }

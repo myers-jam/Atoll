@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:300,400,700');
 
 .section-8 {
     display: flex;
@@ -32,16 +32,18 @@
     text-align: center;
     font-size: 3.5rem;
     color: rgb(255, 255, 255);
+    max-width: 100%;
 }
 
 #gallery-title {
     color: #1f1f1f;
 }
+
 .box {
     width: 500px;
     height: 375px;
     background-size: cover;
-    margin:  2rem;
+    margin: 2rem;
     justify-content: center;
 }
 
@@ -51,57 +53,106 @@
 }
 
 #game1 {
-    background-image:url('../../image/SC4.PNG');
+    background-image: url('../../image/SC4.PNG');
 }
 
 #game2 {
-    background-image:url('../../image/SC5.PNG');
+    background-image: url('../../image/SC5.PNG');
 }
 
 #game3 {
-    background-image:url('../../image/SC6.PNG');
+    background-image: url('../../image/SC6.PNG');
 }
 
 #game4 {
-    background-image:url('../../image/SC7.PNG');
+    background-image: url('../../image/SC7.PNG');
 }
 
 #game5 {
-    background-image:url('../../image/SC8.PNG');
+    background-image: url('../../image/SC8.PNG');
 }
 
 #game6 {
-    background-image:url('../../image/SC9.PNG');
+    background-image: url('../../image/SC9.PNG');
 }
 
 #game7 {
-    background-image:url('../../image/SC10.PNG');
+    background-image: url('../../image/SC10.PNG');
 }
 
 #game8 {
-    background-image:url('../../image/SC11.PNG');
+    background-image: url('../../image/SC11.PNG');
 }
 
 #game9 {
-    background-image:url('../../image/SC12.PNG');
+    background-image: url('../../image/SC12.PNG');
 }
 
 #game10 {
-    background-image:url('../../image/SC13.png');
+    background-image: url('../../image/SC13.png');
 }
 
 #game11 {
-    background-image:url('../../image/SC14.PNG');
+    background-image: url('../../image/SC14.PNG');
 }
 
 #game12 {
-    background-image:url('../../image/SC15.PNG');
+    background-image: url('../../image/SC15.PNG');
 }
 
 #game13 {
-    background-image:url('../../image/SC16.PNG');
+    background-image: url('../../image/SC16.PNG');
 }
 
 #game14 {
-    background-image:url('../../image/SC17.PNG');
+    background-image: url('../../image/SC17.PNG');
+}
+
+@media screen and (max-width:1135px) {
+    .circle-container {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:1136px) {
+    .circle-container-top {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .circle {
+        width: 275px;
+        height: 275px;
+        border-radius: 50%;
+        margin: auto;
+        font-family: 'Black Han Sans', sans-serif;
+        background-color: #ee792a;
+        line-height: 275px;
+        text-align: center !important;
+        font-size: 3rem;
+        color: rgb(255, 255, 255);
+        max-width: 100vh;
+    }
+
+    .section-8 {
+        display: block;
+        width: 100%;
+        height: max-content;
+        padding-bottom: 5rem;
+        background-color: #1f1f1f;
+    }
+
+    .box {
+        /* width: 500px;
+        height: 375px; */
+        width: 400px;
+        height: 275px;
+        background-size: cover;
+        margin: 2rem;
+        justify-content: center;
+    }
+
 }

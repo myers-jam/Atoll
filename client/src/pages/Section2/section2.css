@@ -16,7 +16,7 @@
     max-width: 60rem;
     height: 20rem;
     display: flex;
-    
+
 }
 
 .title-text {
@@ -29,6 +29,12 @@
     /* height: 20rem; */
     /* display: flex; */
     /* background-color: orange; */
+}
+
+@media screen and (max-width: 450px) {
+    .title-text {
+        font-size: 4rem;
+    }
 }
 
 
